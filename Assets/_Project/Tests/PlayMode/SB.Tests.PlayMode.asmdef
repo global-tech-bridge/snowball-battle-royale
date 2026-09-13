@@ -1,0 +1,28 @@
+{
+    "name": "SB.Tests.PlayMode",
+    "rootNamespace": "SnowballBattleRoyale.Tests.PlayMode",
+    "references": [
+        "UnityEngine.TestRunner",
+        "SB.Domain",
+        "SB.Core",
+        "SB.Player",
+        "SB.World",
+        "SB.Items",
+        "SB.AI",
+        "SB.Audio",
+        "SB.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
