@@ -1,0 +1,14 @@
+{
+    "name": "SB.UI",
+    "rootNamespace": "SnowballBattleRoyale.UI",
+    "references": ["SB.Domain", "SB.Core", "SB.Items", "SB.Player", "Unity.InputSystem", "Unity.Localization", "Unity.TextMeshPro"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

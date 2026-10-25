@@ -1,0 +1,14 @@
+{
+    "name": "SB.AI",
+    "rootNamespace": "SnowballBattleRoyale.AI",
+    "references": ["SB.Domain", "SB.Core", "SB.Items", "SB.World"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

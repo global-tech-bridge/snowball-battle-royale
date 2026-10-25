@@ -1,0 +1,14 @@
+{
+    "name": "SB.Player",
+    "rootNamespace": "SnowballBattleRoyale.Player",
+    "references": ["SB.Domain", "SB.Core", "SB.Items", "SB.World", "Unity.InputSystem"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

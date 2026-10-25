@@ -1,0 +1,14 @@
+{
+    "name": "SB.Items",
+    "rootNamespace": "SnowballBattleRoyale.Items",
+    "references": ["SB.Domain", "SB.Core"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
