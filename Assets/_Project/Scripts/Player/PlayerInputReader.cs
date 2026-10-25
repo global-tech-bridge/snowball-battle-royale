@@ -35,11 +35,7 @@ namespace SnowballBattleRoyale.Player
 
         public Vector2 Look => _look?.ReadValue<Vector2>() ?? Vector2.zero;
 
-        /// <summary>
-        /// Read as a value rather than via <c>IsPressed()</c>: Sprint is a hold, and reading the
-        /// actuation directly is what reliably reflects "the key is still down".
-        /// </summary>
-        public bool SprintHeld => (_sprint?.ReadValue<float>() ?? 0f) > 0.5f;
+        public bool SprintHeld => _sprint?.IsPressed() ?? false;
 
         public bool CrouchToggled { get; private set; }
 

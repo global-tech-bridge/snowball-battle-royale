@@ -10,7 +10,9 @@
         "SB.Items",
         "SB.AI",
         "SB.Audio",
-        "SB.UI"
+        "SB.UI",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
