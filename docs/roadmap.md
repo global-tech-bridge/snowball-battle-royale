@@ -4,8 +4,8 @@ Snowball Battle Royale の開発フェーズ一覧。各フェーズは GitHub I
 
 | Phase | Issue | 内容 | 状態 |
 | --- | --- | --- | --- |
-| 1 | [#10](https://github.com/global-tech-bridge/snowball-battle-royale/issues/10) | プロジェクトセットアップ（Unity 初期化・asmdef・ロガー） | 進行中 |
-| 2 | [#11](https://github.com/global-tech-bridge/snowball-battle-royale/issues/11) | プレイヤーコントローラー（FPS 移動・視点・スタミナ） | 未着手 |
+| 1 | [#10](https://github.com/global-tech-bridge/snowball-battle-royale/issues/10) | プロジェクトセットアップ（Unity 初期化・asmdef・ロガー） | 完了 |
+| 2 | [#11](https://github.com/global-tech-bridge/snowball-battle-royale/issues/11) | プレイヤーコントローラー（FPS 移動・視点・スタミナ） | 完了 |
 | 3 | [#12](https://github.com/global-tech-bridge/snowball-battle-royale/issues/12) | ワールド・地形（バイオーム・小屋・掘削システム） | 未着手 |
 | 4 | [#13](https://github.com/global-tech-bridge/snowball-battle-royale/issues/13) | 戦闘・雪玉（投擲・当たり判定・雪壁構築） | 未着手 |
 | 5 | [#14](https://github.com/global-tech-bridge/snowball-battle-royale/issues/14) | 悴み（Cold）システム | 未着手 |
@@ -34,7 +34,10 @@ Unity プロジェクトを初期化し、AI 駆動開発の土台を整える�
 
 `PlayerStats`（Pure C#）+ `PlayerStatsSO` + `PlayerMovement` + `PlayerLook`。
 移動速度は 歩 8 / ダッシュ 14 / しゃがみ 4 / 伏せ 2 m/s。スタミナはダッシュ -10/s、回復 +5/s、
-悴み 75% 以上で消費 2 倍。
+悴み 75% 以上で消費 2 倍。姿勢の優先度は Prone > Crouch > Sprint > Walk。
+
+詳細は [docs/gameplay-systems.md](gameplay-systems.md) Section 1。
+検証用シーンは `Assets/_Project/Scenes/Sandbox_Player.unity`。
 
 ## Phase 3: ワールド・地形
 
