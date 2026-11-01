@@ -6,7 +6,7 @@ Snowball Battle Royale の開発フェーズ一覧。各フェーズは GitHub I
 | --- | --- | --- | --- |
 | 1 | [#10](https://github.com/global-tech-bridge/snowball-battle-royale/issues/10) | プロジェクトセットアップ（Unity 初期化・asmdef・ロガー） | 完了 |
 | 2 | [#11](https://github.com/global-tech-bridge/snowball-battle-royale/issues/11) | プレイヤーコントローラー（FPS 移動・視点・スタミナ） | 完了 |
-| 3 | [#12](https://github.com/global-tech-bridge/snowball-battle-royale/issues/12) | ワールド・地形（バイオーム・小屋・掘削システム） | 未着手 |
+| 3 | [#12](https://github.com/global-tech-bridge/snowball-battle-royale/issues/12) | ワールド・地形（バイオーム・小屋・掘削システム） | 完了 |
 | 4 | [#13](https://github.com/global-tech-bridge/snowball-battle-royale/issues/13) | 戦闘・雪玉（投擲・当たり判定・雪壁構築） | 未着手 |
 | 5 | [#14](https://github.com/global-tech-bridge/snowball-battle-royale/issues/14) | 悴み（Cold）システム | 未着手 |
 | 6 | [#15](https://github.com/global-tech-bridge/snowball-battle-royale/issues/15) | インベントリ・アイテム（8 スロット・9 種） | 未着手 |
@@ -41,9 +41,12 @@ Unity プロジェクトを初期化し、AI 駆動開発の土台を整える�
 
 ## Phase 3: ワールド・地形
 
-700m × 700m のマップ。Mountain / Forest / Plain / DeepSnow / FrozenLake のバイオーム、
-樹木 約 1100 本・岩 約 250 個・小屋（集落 4 + 散在 8）・焚き火 20 箇所。
-`DigSystem` によるハイトマップ動的変形（塹壕構築・掘削深度による色変化）。
+700m × 700m のマップを**シードから実行時に生成**する。Mountain ×4 / Forest ×5 / Valley ×1 /
+DeepSnow ×3 / FrozenLake ×2 と背景の Plain。樹木 1100 本・岩 250 個・小屋 20 棟（集落 4 × 3 + 散在 8）・
+焚き火 20 箇所。`TerrainDigSystem` によるハイトマップの動的変形（塹壕構築・掘削深度による色変化）。
+
+詳細は [docs/gameplay-systems.md](gameplay-systems.md) Section 5。
+検証用シーンは `Assets/_Project/Scenes/Sandbox_World.unity`。
 
 ## Phase 4: 戦闘・雪玉
 
