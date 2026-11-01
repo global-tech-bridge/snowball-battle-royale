@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 87263812520665571}
   - component: {fileID: 8488667173311598358}
   - component: {fileID: 642057729700815261}
+  - component: {fileID: 7356630402720459581}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -255,3 +256,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: SB.UI::SnowballBattleRoyale.UI.DebugStatusHud
   _player: {fileID: 87263812520665571}
   _showMovementDebug: 1
+--- !u!114 &7356630402720459581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698693708936175249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4499f030dd0944343a9f765919fc093e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SB.Player::SnowballBattleRoyale.Player.PlayerDigger
+  _input: {fileID: 2728752542743092402}
+  _aim: {fileID: 4787976973486354372}
+  _reach: 4
+  _repeatInterval: 0.25
+  _mask:
+    serializedVersion: 2
+    m_Bits: 4294967295

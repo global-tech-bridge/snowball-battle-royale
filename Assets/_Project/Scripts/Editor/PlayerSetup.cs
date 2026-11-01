@@ -87,6 +87,7 @@ namespace SnowballBattleRoyale.EditorTools
                 PlayerMovement movement = root.AddComponent<PlayerMovement>();
                 PlayerLook playerLook = root.AddComponent<PlayerLook>();
                 DebugStatusHud hud = root.AddComponent<DebugStatusHud>();
+                PlayerDigger digger = root.AddComponent<PlayerDigger>();
 
                 SetReferences(input, ("_actions", actions));
                 SetReferences(movement, ("_statsConfig", stats), ("_input", input));
@@ -97,6 +98,7 @@ namespace SnowballBattleRoyale.EditorTools
                     ("_cameraPivot", pivot.transform),
                     ("_movement", movement));
                 SetReferences(hud, ("_player", movement));
+                SetReferences(digger, ("_input", input), ("_aim", cameraGo.transform));
 
                 GameObject saved = PrefabUtility.SaveAsPrefabAsset(root, PlayerPrefabPath);
                 Debug.Log($"[PlayerSetup] Wrote {PlayerPrefabPath}");
