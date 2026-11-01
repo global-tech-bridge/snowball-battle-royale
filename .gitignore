@@ -71,3 +71,6 @@ crashlytics-build.properties
 
 # ---- Node (tooling) ----
 node_modules/
+
+# ---- Unity crash dumps ----
+mono_crash.*.json
