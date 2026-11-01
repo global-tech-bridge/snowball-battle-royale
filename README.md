@@ -40,8 +40,13 @@
 | しゃがみ | C（トグル） |
 | 伏せ | Z（トグル） |
 | 視点 | マウス |
+| 掘る | 右クリック（長押しで連続） |
 
 左上に HP / スタミナ / 悴みの仮バーが出る（Phase 10 で正式な HUD に置き換え）。
+
+`Assets/_Project/Scenes/Sandbox_World.unity` では 700m 四方のマップがシードから生成され、
+スポーン地点に配置される。足元の地面を右クリックで掘ると塹壕が作れる。
+マップの俯瞰図は `Tools > Snowball > Capture World Preview` で `Logs/WorldPreview/` に出力できる。
 マウス感度は `Assets/_Project/Configs/Player/PlayerLookSettingsSO.asset` で調整でき、
 Play Mode 中の変更も即反映される。
 

@@ -30,12 +30,17 @@ namespace SnowballBattleRoyale.Player
         private InputAction _sprint;
         private InputAction _crouch;
         private InputAction _prone;
+        private InputAction _dig;
 
         public Vector2 Move => _move?.ReadValue<Vector2>() ?? Vector2.zero;
 
         public Vector2 Look => _look?.ReadValue<Vector2>() ?? Vector2.zero;
 
         public bool SprintHeld => _sprint?.IsPressed() ?? false;
+
+        public bool DigHeld => _dig?.IsPressed() ?? false;
+
+        public bool DigPressedThisFrame => _dig?.WasPressedThisFrame() ?? false;
 
         public bool CrouchToggled { get; private set; }
 
@@ -66,6 +71,7 @@ namespace SnowballBattleRoyale.Player
             _sprint = _gameplayMap.FindAction("Sprint", throwIfNotFound: false);
             _crouch = _gameplayMap.FindAction("Crouch", throwIfNotFound: false);
             _prone = _gameplayMap.FindAction("Prone", throwIfNotFound: false);
+            _dig = _gameplayMap.FindAction("Dig", throwIfNotFound: false);
         }
 
         private void OnEnable()

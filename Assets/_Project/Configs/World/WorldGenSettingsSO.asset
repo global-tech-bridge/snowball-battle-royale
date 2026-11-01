@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9c5be83de714617b3998687e32ae64, type: 3}
+  m_Name: WorldGenSettingsSO
+  m_EditorClassIdentifier: SB.World::SnowballBattleRoyale.World.WorldGenSettingsSO
+  _seed: 12345
+  _biomes: {fileID: 11400000, guid: af7fc2173210c4dfbb77983d65950506, type: 2}
+  _layout:
+    Size: 700
+    RegionEdgeMargin: 40
+    SiteEdgeMargin: 30
+    RegionSeparation: 0.85
+    SettlementCount: 4
+    CabinsPerSettlement: 3
+    SettlementCabinRing: 14
+    SettlementFlattenRadius: 26
+    SettlementFenceRadius: 24
+    FenceSegmentLength: 3
+    FenceGapCount: 2
+    FenceGapSegments: 2
+    MinSettlementSpacing: 140
+    ScatteredCabinCount: 8
+    MinScatteredCabinSpacing: 50
+    CabinFootprintRadius: 4.5
+    WellFootprintRadius: 1.5
+    CampfireFootprintRadius: 1.5
+    CampfireCount: 20
+    MinCampfireSpacing: 30
+    MinCampfireCabinDistance: 10
+    CampfireMinLifetime: 90
+    CampfireMaxLifetime: 360
+    SpawnClearance: 12
+    MaxPlacementAttempts: 6000
+  _shape:
+    TerrainHeight: 120
+    PlainElevation: 30
+    PlainNoiseAmplitude: 3
+    PlainNoiseScale: 180
+    DetailNoiseAmplitude: 0.6
+    DetailNoiseScale: 25
+    ForestRise: 2
+    MountainPeak: 60
+    MountainPeakVariation: 0.15
+    MountainRidgeScale: 60
+    ValleyDepth: 12
+    DeepSnowRise: 2.5
+    LakeDepth: 4
+    SiteFlattenBlend: 6
+  _scatter:
+    TreeCount: 1100
+    RockCount: 250
+    MinTreeSpacing: 3
+    MinRockSpacing: 3
+    MinTreeRockSpacing: 2
+    SiteClearance: 2
+    SpawnClearance: 6
+    MaxAttemptsPerProp: 400
+  _soil:
+    DirtDepth: 0.25
+    DeepDirtDepth: 1
+    Blend: 0.1
+  _dig:
+    Radius: 1.2
+    Amount: 0.3
+    CoreFraction: 0.35
+    MaxDepth: 2
+    ReposeSlope: 1
+    HideDepth: 1.2
+  _heightmapResolution: 1025
+  _alphamapResolution: 1024

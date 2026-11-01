@@ -8,7 +8,8 @@
         "Unity.RenderPipelines.Core.Runtime",
         "Unity.InputSystem",
         "SB.Player",
-        "SB.UI"
+        "SB.UI",
+        "SB.World"
     ],
     "includePlatforms": [
         "Editor"
